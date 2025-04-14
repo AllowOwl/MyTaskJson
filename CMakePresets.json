@@ -2,18 +2,6 @@
     "version": 8,
     "configurePresets": [
         {
-            "name": "Configure preset using toolchain file",
-            "displayName": "Configure preset using toolchain file",
-            "description": "Sets Ninja generator, build and install directory",
-            "generator": "Ninja",
-            "binaryDir": "${sourceDir}/out/build/${presetName}",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_TOOLCHAIN_FILE": "",
-                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
-            }
-        },
-        {
             "name": "GCC 10.3.1 x86_64-alt-linux",
             "displayName": "GCC 10.3.1 x86_64-alt-linux",
             "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",

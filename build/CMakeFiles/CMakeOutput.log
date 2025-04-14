@@ -28,10 +28,10 @@ The CXX compiler identification is GNU, found in "/home/savva-alt-desktop/Progra
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_474e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_474e8.dir/build.make CMakeFiles/cmTC_474e8.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_011f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_011f1.dir/build.make CMakeFiles/cmTC_011f1.dir/build
 gmake[1]: Entering directory '/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc   -v -o CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc   -v -o CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=x86_64-alt-linux-gcc
 Target: x86_64-alt-linux
@@ -39,8 +39,8 @@ Configured with: ../configure --host=x86_64-alt-linux --build=x86_64-alt-linux -
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-alt-linux/10/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -version -o /tmp/.private/savva-alt-desktop/ccHh5ojf.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-alt-linux/10/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -version -o /tmp/.private/savva-alt-desktop/ccQe0njI.s
 GNU C17 (GCC) version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (x86_64-alt-linux)
 	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -56,15 +56,15 @@ GNU C17 (GCC) version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (x86_64-alt-lin
 	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 57df334d8e77a1fd2f8918e1fa6d16cd
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o /tmp/.private/savva-alt-desktop/ccHh5ojf.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o /tmp/.private/savva-alt-desktop/ccQe0njI.s
 GNU assembler version 2.35.2 (x86_64-alt-linux) using BFD version (GNU Binutils) 2.35.2.20210110
 COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_474e8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_474e8.dir/link.txt --verbose=1
-/usr/bin/gcc  -v CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -o cmTC_474e8 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_011f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_011f1.dir/link.txt --verbose=1
+/usr/bin/gcc  -v CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -o cmTC_011f1 
 Using built-in specs.
 COLLECT_GCC=x86_64-alt-linux-gcc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper
@@ -75,9 +75,9 @@ Supported LTO compression algorithms: zlib
 gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_474e8' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccczdASF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_474e8 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_474e8' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_011f1' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/cce2cQC6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_011f1 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_011f1' '-mtune=generic' '-march=x86-64'
 gmake[1]: Leaving directory '/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp'
 
 
@@ -99,10 +99,10 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_474e8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_474e8.dir/build.make CMakeFiles/cmTC_474e8.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_011f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_011f1.dir/build.make CMakeFiles/cmTC_011f1.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc   -v -o CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc   -v -o CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=x86_64-alt-linux-gcc]
   ignore line: [Target: x86_64-alt-linux]
@@ -110,8 +110,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-alt-linux/10/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -version -o /tmp/.private/savva-alt-desktop/ccHh5ojf.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-alt-linux/10/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -version -o /tmp/.private/savva-alt-desktop/ccQe0njI.s]
   ignore line: [GNU C17 (GCC) version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (x86_64-alt-linux)]
   ignore line: [	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -127,15 +127,15 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 57df334d8e77a1fd2f8918e1fa6d16cd]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o /tmp/.private/savva-alt-desktop/ccHh5ojf.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o /tmp/.private/savva-alt-desktop/ccQe0njI.s]
   ignore line: [GNU assembler version 2.35.2 (x86_64-alt-linux) using BFD version (GNU Binutils) 2.35.2.20210110]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_474e8]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_474e8.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc  -v CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -o cmTC_474e8 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_011f1]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_011f1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc  -v CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -o cmTC_011f1 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=x86_64-alt-linux-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper]
@@ -146,13 +146,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_474e8' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccczdASF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_474e8 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_011f1' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/cce2cQC6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_011f1 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-alt-linux/10/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccczdASF.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/cce2cQC6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -170,7 +170,7 @@ Parsed C implicit link information from above output:
     arg [-pie] ==> ignore
     arg [-znow] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_474e8] ==> ignore
+    arg [cmTC_011f1] ==> ignore
     arg [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o]
     arg [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o]
     arg [/usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o]
@@ -179,7 +179,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib64/gcc/x86_64-alt-linux/10/../../..] ==> dir [/usr/lib64/gcc/x86_64-alt-linux/10/../../..]
-    arg [CMakeFiles/cmTC_474e8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_011f1.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -210,10 +210,10 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17bc4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17bc4.dir/build.make CMakeFiles/cmTC_17bc4.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_05374/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05374.dir/build.make CMakeFiles/cmTC_05374.dir/build
 gmake[1]: Entering directory '/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++   -v -o CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++   -v -o CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=x86_64-alt-linux-g++
 Target: x86_64-alt-linux
@@ -221,8 +221,8 @@ Configured with: ../configure --host=x86_64-alt-linux --build=x86_64-alt-linux -
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-alt-linux/10/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -Werror=return-type -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/.private/savva-alt-desktop/ccCzPIf6.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-alt-linux/10/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -Werror=return-type -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/.private/savva-alt-desktop/cckWFCGA.s
 GNU C++14 (GCC) version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (x86_64-alt-linux)
 	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -241,15 +241,15 @@ GNU C++14 (GCC) version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (x86_64-alt-l
 	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: dee9d4b4a08519bacffde130e66cc255
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o /tmp/.private/savva-alt-desktop/ccCzPIf6.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o /tmp/.private/savva-alt-desktop/cckWFCGA.s
 GNU assembler version 2.35.2 (x86_64-alt-linux) using BFD version (GNU Binutils) 2.35.2.20210110
 COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_17bc4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17bc4.dir/link.txt --verbose=1
-/usr/bin/g++  -v CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_17bc4 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_05374
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05374.dir/link.txt --verbose=1
+/usr/bin/g++  -v CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_05374 
 Using built-in specs.
 COLLECT_GCC=x86_64-alt-linux-g++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper
@@ -260,9 +260,9 @@ Supported LTO compression algorithms: zlib
 gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_17bc4' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccuJvuls.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_17bc4 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_17bc4' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_05374' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccbeioqV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_05374 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_05374' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 gmake[1]: Leaving directory '/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp'
 
 
@@ -290,10 +290,10 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17bc4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17bc4.dir/build.make CMakeFiles/cmTC_17bc4.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_05374/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05374.dir/build.make CMakeFiles/cmTC_05374.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=x86_64-alt-linux-g++]
   ignore line: [Target: x86_64-alt-linux]
@@ -301,8 +301,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-alt-linux/10/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -Werror=return-type -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/.private/savva-alt-desktop/ccCzPIf6.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-alt-linux/10/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -Werror=return-type -fstack-protector-strong -fstack-clash-protection -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/.private/savva-alt-desktop/cckWFCGA.s]
   ignore line: [GNU C++14 (GCC) version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (x86_64-alt-linux)]
   ignore line: [	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -321,15 +321,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [	compiled by GNU C version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: dee9d4b4a08519bacffde130e66cc255]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o /tmp/.private/savva-alt-desktop/ccCzPIf6.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o /tmp/.private/savva-alt-desktop/cckWFCGA.s]
   ignore line: [GNU assembler version 2.35.2 (x86_64-alt-linux) using BFD version (GNU Binutils) 2.35.2.20210110]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_17bc4]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17bc4.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_17bc4 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_05374]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05374.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_05374 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=x86_64-alt-linux-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper]
@@ -340,13 +340,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 10.3.1 20210703 (ALT Sisyphus 10.3.1-alt2) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/10/:/usr/libexec/gcc/x86_64-alt-linux/:/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-alt-linux/10/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-alt-linux/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_17bc4' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccuJvuls.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_17bc4 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_05374' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-alt-linux/10/collect2 -plugin /usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper -plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccbeioqV.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu --as-needed -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -o cmTC_05374 /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o -L/usr/lib64/gcc/x86_64-alt-linux/10 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-alt-linux/10/../../.. CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-alt-linux/10/crtendS.o /usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-alt-linux/10/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/libexec/gcc/x86_64-alt-linux/10/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/libexec/gcc/x86_64-alt-linux/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccuJvuls.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/.private/savva-alt-desktop/ccbeioqV.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -364,7 +364,7 @@ Parsed CXX implicit link information from above output:
     arg [-pie] ==> ignore
     arg [-znow] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_17bc4] ==> ignore
+    arg [cmTC_05374] ==> ignore
     arg [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/Scrt1.o]
     arg [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-alt-linux/10/../../../../lib64/crti.o]
     arg [/usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-alt-linux/10/crtbeginS.o]
@@ -373,7 +373,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib64/gcc/x86_64-alt-linux/10/../../..] ==> dir [/usr/lib64/gcc/x86_64-alt-linux/10/../../..]
-    arg [CMakeFiles/cmTC_17bc4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_05374.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]

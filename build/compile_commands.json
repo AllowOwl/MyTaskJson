@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build",
-  "command": "/usr/bin/g++  -I/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-src/include -g -std=gnu++17 -o CMakeFiles/mytaskjson.dir/main.cpp.o -c /home/savva-alt-desktop/Programs_C++/MyTaskJson/main.cpp",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/mytaskjson.dir/main.cpp.o -c /home/savva-alt-desktop/Programs_C++/MyTaskJson/main.cpp",
   "file": "/home/savva-alt-desktop/Programs_C++/MyTaskJson/main.cpp"
 }
 ]

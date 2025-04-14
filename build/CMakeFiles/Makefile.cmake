@@ -11,36 +11,23 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.23.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeSystem.cmake"
-  "_deps/nlohmann_json-src/CMakeLists.txt"
-  "_deps/nlohmann_json-src/cmake/config.cmake.in"
-  "_deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in"
-  "_deps/nlohmann_json-src/cmake/pkg-config.pc.in"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake/Modules/CMakeLanguageInformation.cmake"
-  "/usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU.cmake"
-  "/usr/share/cmake/Modules/ExternalProject.cmake"
-  "/usr/share/cmake/Modules/FetchContent.cmake"
-  "/usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in"
-  "/usr/share/cmake/Modules/FindGit.cmake"
-  "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-  "/usr/share/cmake/Modules/FindPackageMessage.cmake"
-  "/usr/share/cmake/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake/Modules/Platform/Linux.cmake"
   "/usr/share/cmake/Modules/Platform/UnixPaths.cmake"
-  "/usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -51,12 +38,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "_deps/nlohmann_json-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "_deps/nlohmann_json-build/nlohmann_json.pc"
-  "_deps/nlohmann_json-build/nlohmann_jsonConfigVersion.cmake"
-  "_deps/nlohmann_json-build/nlohmann_jsonConfig.cmake"
-  "_deps/nlohmann_json-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

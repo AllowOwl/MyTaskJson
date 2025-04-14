@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-src/include
+CXX_INCLUDES = 
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -g
 

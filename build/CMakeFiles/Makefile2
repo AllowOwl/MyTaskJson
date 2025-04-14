@@ -64,32 +64,15 @@ CMAKE_BINARY_DIR = /home/savva-alt-desktop/Programs_C++/MyTaskJson/build
 
 # The main recursive "all" target.
 all: CMakeFiles/mytaskjson.dir/all
-all: _deps/nlohmann_json-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: _deps/nlohmann_json-build/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/mytaskjson.dir/clean
-clean: _deps/nlohmann_json-build/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory _deps/nlohmann_json-build
-
-# Recursive "all" directory target.
-_deps/nlohmann_json-build/all:
-.PHONY : _deps/nlohmann_json-build/all
-
-# Recursive "preinstall" directory target.
-_deps/nlohmann_json-build/preinstall:
-.PHONY : _deps/nlohmann_json-build/preinstall
-
-# Recursive "clean" directory target.
-_deps/nlohmann_json-build/clean:
-.PHONY : _deps/nlohmann_json-build/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mytaskjson.dir
