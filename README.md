@@ -1,16 +1,16 @@
----Логика работы---
+--- Workflow Logic ---
 
--Определяет пути к данным
+- Determines data paths
 
--Загружает JSON-файлы через cURL
+- Downloads JSON files via cURL
 
--Обрабатывает и сравнивает пакеты
+- Processes and compares packages
 
--Сохраняет результат в comparison_result.json
+- Saves results to comparison_result.json
 
--Автоматически скачивает актуальные данные
+- Automatically download up-to-date data
 
-#---Организация файлов---
+--- File Organization ---
 
 data/
 
@@ -26,7 +26,7 @@ data/
 
 ---------comparison_result.json
 
-Структура comparison_result.json:
+---Structure of comparison_result.json---
 
 {
 
