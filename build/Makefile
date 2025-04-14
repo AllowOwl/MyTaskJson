@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/savva-alt-desktop/Programs_C++/task_json
+CMAKE_SOURCE_DIR = /home/savva-alt-desktop/Programs_C++/MyTaskJson
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/savva-alt-desktop/Programs_C++/task_json/build
+CMAKE_BINARY_DIR = /home/savva-alt-desktop/Programs_C++/MyTaskJson/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles /home/savva-alt-desktop/Programs_C++/task_json/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles /home/savva-alt-desktop/Programs_C++/MyTaskJson/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,38 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named task_json
+# Target rules for targets named mytaskjson
 
 # Build rule for target.
-task_json: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task_json
-.PHONY : task_json
+mytaskjson: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mytaskjson
+.PHONY : mytaskjson
 
 # fast build rule for target.
-task_json/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/build
-.PHONY : task_json/fast
-
-#=============================================================================
-# Target rules for targets named your_target
-
-# Build rule for target.
-your_target: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 your_target
-.PHONY : your_target
-
-# fast build rule for target.
-your_target/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/build
-.PHONY : your_target/fast
+mytaskjson/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/build
+.PHONY : mytaskjson/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -156,8 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -165,8 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,8 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... task_json"
-	@echo "... your_target"
+	@echo "... mytaskjson"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

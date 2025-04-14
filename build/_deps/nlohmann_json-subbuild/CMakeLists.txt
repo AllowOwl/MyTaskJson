@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(nlohmann_json-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/nlohmann/json.git" "GIT_TAG" "v3.11.2"
-                    SOURCE_DIR          "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-src"
-                    BINARY_DIR          "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-build"
+                    SOURCE_DIR          "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-src"
+                    BINARY_DIR          "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

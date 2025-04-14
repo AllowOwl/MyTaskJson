@@ -54,17 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/savva-alt-desktop/Programs_C++/task_json
+CMAKE_SOURCE_DIR = /home/savva-alt-desktop/Programs_C++/MyTaskJson
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/savva-alt-desktop/Programs_C++/task_json/build
+CMAKE_BINARY_DIR = /home/savva-alt-desktop/Programs_C++/MyTaskJson/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/task_json.dir/all
-all: CMakeFiles/your_target.dir/all
+all: CMakeFiles/mytaskjson.dir/all
 all: _deps/nlohmann_json-build/all
 .PHONY : all
 
@@ -73,8 +72,7 @@ preinstall: _deps/nlohmann_json-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/task_json.dir/clean
-clean: CMakeFiles/your_target.dir/clean
+clean: CMakeFiles/mytaskjson.dir/clean
 clean: _deps/nlohmann_json-build/clean
 .PHONY : clean
 
@@ -94,56 +92,30 @@ _deps/nlohmann_json-build/clean:
 .PHONY : _deps/nlohmann_json-build/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/task_json.dir
+# Target rules for target CMakeFiles/mytaskjson.dir
 
 # All Build rule for target.
-CMakeFiles/task_json.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles --progress-num=1,2 "Built target task_json"
-.PHONY : CMakeFiles/task_json.dir/all
+CMakeFiles/mytaskjson.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles --progress-num=1,2 "Built target mytaskjson"
+.PHONY : CMakeFiles/mytaskjson.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/task_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task_json.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles 0
-.PHONY : CMakeFiles/task_json.dir/rule
+CMakeFiles/mytaskjson.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mytaskjson.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles 0
+.PHONY : CMakeFiles/mytaskjson.dir/rule
 
 # Convenience name for target.
-task_json: CMakeFiles/task_json.dir/rule
-.PHONY : task_json
+mytaskjson: CMakeFiles/mytaskjson.dir/rule
+.PHONY : mytaskjson
 
 # clean rule for target.
-CMakeFiles/task_json.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task_json.dir/build.make CMakeFiles/task_json.dir/clean
-.PHONY : CMakeFiles/task_json.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/your_target.dir
-
-# All Build rule for target.
-CMakeFiles/your_target.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles --progress-num=3,4 "Built target your_target"
-.PHONY : CMakeFiles/your_target.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/your_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/your_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/savva-alt-desktop/Programs_C++/task_json/build/CMakeFiles 0
-.PHONY : CMakeFiles/your_target.dir/rule
-
-# Convenience name for target.
-your_target: CMakeFiles/your_target.dir/rule
-.PHONY : your_target
-
-# clean rule for target.
-CMakeFiles/your_target.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/your_target.dir/build.make CMakeFiles/your_target.dir/clean
-.PHONY : CMakeFiles/your_target.dir/clean
+CMakeFiles/mytaskjson.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/clean
+.PHONY : CMakeFiles/mytaskjson.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

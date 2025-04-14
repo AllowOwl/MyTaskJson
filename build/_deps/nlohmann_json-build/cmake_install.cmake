@@ -1,4 +1,4 @@
-# Install script for directory: /home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-src
+# Install script for directory: /home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

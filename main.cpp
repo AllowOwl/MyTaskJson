@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
 #include <filesystem>
+#include <nlohmann/json.hpp>
 
 std::string GetExecutableDir() {
     namespace fs = std::filesystem;
-    
     try {
         // Получаем канонический путь к исполняемому файлу
         fs::path exe_path = fs::canonical("/proc/self/exe");

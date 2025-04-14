@@ -61,6 +61,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/task_json.dir/DependInfo.cmake"
-  "CMakeFiles/your_target.dir/DependInfo.cmake"
+  "CMakeFiles/mytaskjson.dir/DependInfo.cmake"
   )

@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.11.2
+Cflags: -I/home/savva-alt-desktop/Programs_C++/MyTaskJson/out/install/GCC 10.3.1 x86_64-alt-linux/include

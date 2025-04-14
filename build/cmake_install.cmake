@@ -1,4 +1,4 @@
-# Install script for directory: /home/savva-alt-desktop/Programs_C++/task_json
+# Install script for directory: /home/savva-alt-desktop/Programs_C++/MyTaskJson
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-build/cmake_install.cmake")
+  include("/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-build/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/savva-alt-desktop/Programs_C++/task_json/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

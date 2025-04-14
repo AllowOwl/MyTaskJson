@@ -4,16 +4,16 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-src"
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-build"
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix"
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/tmp"
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp"
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src"
-  "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-src"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-build"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/tmp"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src"
+  "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/savva-alt-desktop/Programs_C++/task_json/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/${subDir}")
 endforeach()
