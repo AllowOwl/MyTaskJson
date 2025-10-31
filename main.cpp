@@ -138,7 +138,8 @@ json create_new_list(const json& p10_data, const json& sisyphus_data) {
 }
 
 int main(int, char**){
-    std::string path = Delete_back_path(GetExecutableDir(), 3);
+    std::string path = Delete_back_path(GetExecutableDir(), 0);
+    std::cout << path;
     system("curl -o sisyphus_packages.json https://rdb.altlinux.org/api/export/branch_binary_packages/sisyphus");
     system("curl -o p10_packages.json https://rdb.altlinux.org/api/export/branch_binary_packages/p10");
     system(("mv " "'" + path + "/out/build/GCC 10.3.1 x86_64-alt-linux/sisyphus_packages.json' " + path + "/data/Sisyphus/").c_str());

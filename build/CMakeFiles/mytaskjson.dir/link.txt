@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/mytaskjson.dir/main.cpp.o -o mytaskjson 
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/mytaskjson.dir/link.d CMakeFiles/mytaskjson.dir/main.cpp.o -o mytaskjson

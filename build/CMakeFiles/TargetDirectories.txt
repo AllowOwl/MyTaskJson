@@ -1,3 +1,5 @@
-/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/mytaskjson.dir
-/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/edit_cache.dir
-/home/savva-alt-desktop/Programs_C++/MyTaskJson/build/CMakeFiles/rebuild_cache.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/mytaskjson.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/edit_cache.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/rebuild_cache.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir
