@@ -163,26 +163,63 @@
 #include <nlohmann/json.hpp>
 
 int main() {
-    std::cout << "Простая проверка библиотеки...\n";
+    std::cout << "=== Testing libaltlinux_comparison methods ===\n\n";
     
     try {
-        altlinux::PackageComparator comp;
+        altlinux::PackageComparator comparator;
         
-        // Просто загружаем пакеты одной ветки
-        std::cout << "Загружаем пакеты из ветки 'p10'...\n";
-        auto packages = comp.load_branch_packages("p10", "x86_64");
         
-        std::cout << "УСПЕХ! Загружено пакетов: " << packages["packages"].size() << "\n";
+        std::cout << "--- downloading pkgs branch p10 ---\n";
+        auto p10_packages = comparator.load_branch_packages("p10", "x86_64");
+        std::cout << "successful dwn pkg: " << p10_packages["packages"].size() << "\n\n";
         
-        //первый пакет
-        if (packages["packages"].size() > 0) {
-            auto first_pkg = packages["packages"][0];
-            std::cout << "Пример пакета: " << first_pkg["name"] << " " 
-                      << first_pkg["version"] << " (" << first_pkg["arch"] << ")\n";
+        
+        std::cout << "--- downloading pkgs branch sisyphus ---\n";
+        auto sisyphus_packages = comparator.load_branch_packages("sisyphus", "x86_64");
+        std::cout << "successful dwn pkg: " << sisyphus_packages["packages"].size() << "\n\n";
+        
+
+        std::cout << "--- compare p10 & sisyphus ---\n";
+        auto comparison_result = comparator.compare_branches("p10", "sisyphus", "x86_64");
+        
+        
+        std::cout << "comparison: " << comparison_result["metadata"]["comparison_date"] << "\n";
+        
+        auto& summary = comparison_result["summary"];
+        std::cout << "summary of comparison:\n";
+        std::cout << "  - pkg only in p10: " << summary["size_branch_1_only_packages"] << "\n";
+        std::cout << "  - pkg only in sisyphus: " << summary["size_branch_2_only_packages"] << "\n";
+        std::cout << "  - pkg newer in p10: " << summary["size_packages_newer_in_branch_1"] << "\n";
+        std::cout << "  - all pkg in p10: " << summary["size_branch1_packages"] << "\n";
+        std::cout << "  - all pkg in sisyphus: " << summary["size_branch2_packages"] << "\n\n";
+        
+        std::cout << "--- differences ---\n";
+        auto& by_arch = comparison_result["comparison_by_architecture"]["x86_64"];
+        
+
+        if (by_arch["branch_1_only"].size() > 0) {
+            std::cout << "print pkg in p10:\n";
+            auto& example = by_arch["branch_1_only"][0];
+            std::cout << "  " << example["name"] << " " << example["version"] 
+                      << "-" << example["release"] << " (" << example["arch"] << ")\n";
+        }
+        if (by_arch["branch_2_only"].size() > 0) {
+            std::cout << "print pkg only in sisyphus:\n";
+            auto& example = by_arch["branch_2_only"][0];
+            std::cout << "  " << example["name"] << " " << example["version"] 
+                      << "-" << example["release"] << " (" << example["arch"] << ")\n";
+        }
+        if (by_arch["branch_1_newer_versions"].size() > 0) {
+            std::cout << "Print pkg with different ver:\n";
+            auto& example = by_arch["branch_1_newer_versions"][0];
+            std::cout << "  " << example["name"] << " (" << example["arch"] << ")\n";
+            std::cout << "    p10: " << example["branch_1_version"] << "\n";
+            std::cout << "    sisyphus:  " << example["branch_2_version"] << "\n";
         }
         
+        
     } catch (const std::exception& e) {
-        std::cerr << "ОШИБКА: " << e.what() << std::endl;
+        std::cerr << "\n err: " << e.what() << std::endl;
         return 1;
     }
     
