@@ -1,225 +1,185 @@
-// #include <iostream>
-// #include <string>
-// #include <fstream>
-// #include <filesystem>
-// #include <nlohmann/json.hpp>
-
-// using json = nlohmann::json;
-
-// std::string GetExecutableDir() {
-//     namespace fs = std::filesystem;
-//     try {
-//         //получает путь расположения программы
-//         fs::path exe_path = fs::canonical("/proc/self/exe");
-//         return exe_path.parent_path().string();
-//     } catch (const std::filesystem::filesystem_error& e) {
-//         std::cerr << "Ошибка получения пути: " << e.what() << '\n';
-//         return {};
-//     }
-// }
-// //удаление последнего адреса директории (с счетчиком)
-// std::string Delete_back_path(std::string path, int n) {
-//     for (int i = 0; i < n; ++i) {
-//         auto pos = path.find_last_of('/');
-//         if (pos == std::string::npos) return "";
-//         path.erase(pos);
-//     }
-//     return path;
-// }
-// //считывание файла в класс nlohmann::json
-// json read_json_file(const std::string& filename) {
-//     std::ifstream file(filename);
-//     if (!file.is_open()) {
-//         throw std::runtime_error("Failed to open file: " + filename);
-//     }
-//     return json::parse(file);
-// }
-
-// //вывод arch
-// void process_request_args(const json& data) {
-//     const auto& args = data["request_args"];
-//     std::string arch = args["arch"].is_null() ? "null" : args["arch"];
-//     std::cout << "Request Architecture: " << arch << "\n";
-// }
-
-// //вывод всего json файла
-// void print_packages(const json& data) {
-//     std::cout << "\nPackages (" << data["packages"].size() << "):\n";
-//     for (const auto& pkg : data["packages"]) {
-//         std::cout << "Name: " << pkg["name"] << "\n"
-//                   << "Version: " << pkg["version"] << "\n"
-//                   << "Arch: " << pkg["arch"] << "\n"
-//                   << "Build time: " << pkg["buildtime"] << "\n\n";
-//     }
-// }
-
-// // полный вывод
-// void process_json_data(const json& data) {
-//     std::cout << "Total records: " << data["length"] << "\n";
-//     process_request_args(data);
-//     print_packages(data);
-// }
-// //сравнение данных
-// json compare_packages(const std::unordered_map<std::string, json>& source_packages,
-//                          const std::unordered_map<std::string, json>& target_packages) {
-//     json result = json::array(); //пустой JSON-массив
-    
-//     for (const auto& [key, pkg] : source_packages) {
-//         if (target_packages.find(key) == target_packages.end()) {
-//             result.push_back({
-//                 {"name", pkg["name"]},
-//                 {"arch", pkg["arch"]},
-//                 {"version", pkg["version"]},
-//                 {"release", pkg["release"]}
-//             });
-//         }
-//     }
-    
-//     return result;
-// }
-
-// json create_new_list(const json& p10_data, const json& sisyphus_data) {
-//     json result;
-
-//     //хеш-таблицы
-//     std::unordered_map<std::string, json> p10_packages;
-//     std::unordered_map<std::string, json> sisyphus_packages;
-
-//     //заполнение
-//     for (const auto& pkg : p10_data["packages"]) {
-//         std::string key = std::string(pkg["name"]) + ":" + std::string(pkg["arch"]);
-//         p10_packages[key] = pkg;
-//     }
-
-//     for (const auto& pkg : sisyphus_data["packages"]) {
-//         std::string key = std::string(pkg["name"]) + ":" + std::string(pkg["arch"]);
-//         sisyphus_packages[key] = pkg;
-//     }
-
-//     //все пакеты, которые есть в p10 но нет в sisyphus
-//     json p10_only = compare_packages(p10_packages, sisyphus_packages);;
-//     result["p10_only"] = p10_only;
-//     //все пакеты, которые есть в sisyphus но их нет в p10
-//     json sisyphus_only = compare_packages(sisyphus_packages, p10_packages);;
-//     result["sisyphus_only"] = sisyphus_only;
-
-//     //все пакеты, version-release которых больше в sisyphus чем в p10
-//     json up_ver_relise_in_sisyphus;
-//     for (const auto& [key, p10_pkg] : p10_packages) {
-//         if (sisyphus_packages.find(key) != sisyphus_packages.end()) {
-//             const auto& sisyphus_pkg = sisyphus_packages[key];
-            
-//             //сравниваем version-release
-//             std::string p10_ver = std::string(p10_pkg["version"]) + "-" + std::string(p10_pkg["release"]);
-//             std::string sisyphus_ver = std::string(sisyphus_pkg["version"]) + "-" + std::string(sisyphus_pkg["release"]);
-            
-//             if (sisyphus_ver > p10_ver) {
-//                 up_ver_relise_in_sisyphus.push_back({
-//                     {"name", p10_pkg["name"]},
-//                     {"arch", p10_pkg["arch"]},
-//                     {"p10_version", p10_ver},
-//                     {"sisyphus_version", sisyphus_ver}
-//                 });
-//             }
-//         }
-//     }
-//     result["up_ver_relise_in_sisyphus"] = up_ver_relise_in_sisyphus;
-
-//     //общие сведенья
-//     result["--stats--"] = {
-//         {"p10_only_count", p10_only.size()},
-//         {"sisyphus_only_count", sisyphus_only.size()},
-//         {"up_ver_relise_in_sisyphus_count", up_ver_relise_in_sisyphus.size()},
-//         {"total_p10_packages", p10_data["packages"].size()},
-//         {"total_sisyphus_packages", sisyphus_data["packages"].size()}
-//     };
-
-//     return result;
-// }
-
-// int main(int, char**){
-//     std::string path = Delete_back_path(GetExecutableDir(), 0);
-//     std::cout << path;
-//     system("curl -o sisyphus_packages.json https://rdb.altlinux.org/api/export/branch_binary_packages/sisyphus");
-//     system("curl -o p10_packages.json https://rdb.altlinux.org/api/export/branch_binary_packages/p10");
-//     system(("mv " "'" + path + "/sisyphus_packages.json' " + path + "/data/Sisyphus/").c_str());
-//     system(("mv " "'" + path + "/p10_packages.json' " + path + "/data/p10/").c_str());
-    
-//     json file_p10 = read_json_file(path + "/data/p10/p10_packages.json");
-//     json file_sisyphus = read_json_file(path + "/data/Sisyphus/sisyphus_packages.json");
-//     //process_json_data(file_p10);//вывод всего json
-
-//     json comparison_result = create_new_list(file_p10, file_sisyphus);
-    
-//     //сохранение результата
-//     std::ofstream out_file(path + "/data/result/comparison_result.json");
-//     out_file << comparison_result.dump(4);
-// }
 #include "libaltlinux_comparison.h"
 #include <iostream>
-#include <string>
 #include <fstream>
-#include <filesystem>
-#include <nlohmann/json.hpp>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iomanip>
 
-int main() {
-    std::cout << "=== Testing libaltlinux_comparison methods ===\n\n";
+using json = nlohmann::json;
+
+void print_usage() {
+    std::cout << "ALT Linux Package Comparator - CLI Utility\n\n";
+    std::cout << "Usage:\n";
+    std::cout << "  altlinux-compare <command> [options]\n\n";
+    std::cout << "Commands:\n";
+    std::cout << "  compare <branch1> <branch2> [arch]    Compare two branches\n";
+    std::cout << "  list-branches                         Show available branches\n";
+    std::cout << "  info <branch> [arch]                  Show branch package info\n";
+    std::cout << "  help                                  Show this help message\n\n";
+    std::cout << "Examples:\n";
+    std::cout << "  altlinux-compare compare p10 p9 x86_64\n";
+    std::cout << "  altlinux-compare compare p10 sisyphus\n";
+    std::cout << "  altlinux-compare info p10\n";
+    std::cout << "  altlinux-compare list-branches\n";
+    std::cout << "!!! Before comparing branches by architecture,\nensure that the required packages are present | info <branch> [arch]!!!\n";
+}
+
+void print_branches() {
+    std::cout << "Available ALT Linux branches:\n";
+    std::cout << "sisyphus\n";
+    std::cout << "sisyphus_e2k\n";
+    std::cout << "sisyphus_riscv64\n";
+    std::cout << "sisyphus_loongarch64\n";
+    std::cout << "p11\n";
+    std::cout << "p10\n";
+    std::cout << "p10_e2k\n";
+    std::cout << "p9\n";
+    std::cout << "c10f2\n";
+    std::cout << "c9f2\n";
     
+    std::cout << "Common architectures:\n";
+    std::cout << "srpm  noarch  x86_64  i586  aarch64  x86_64-i586\n";
+}
+
+void print_package_info(const std::string& branch, const std::string& arch = "") {
     try {
-        altlinux::PackageComparator comparator;
-        
-        
-        std::cout << "--- downloading pkgs branch p10 ---\n";
-        auto p10_packages = comparator.load_branch_packages("p10", "x86_64");
-        std::cout << "successful dwn pkg: " << p10_packages["packages"].size() << "\n\n";
-        
-        
-        std::cout << "--- downloading pkgs branch sisyphus ---\n";
-        auto sisyphus_packages = comparator.load_branch_packages("sisyphus", "x86_64");
-        std::cout << "successful dwn pkg: " << sisyphus_packages["packages"].size() << "\n\n";
-        
-
-        std::cout << "--- compare p10 & sisyphus ---\n";
-        auto comparison_result = comparator.compare_branches("p10", "sisyphus", "x86_64");
-        
-        
-        std::cout << "comparison: " << comparison_result["metadata"]["comparison_date"] << "\n";
-        
-        auto& summary = comparison_result["summary"];
-        std::cout << "summary of comparison:\n";
-        std::cout << "  - pkg only in p10: " << summary["size_branch_1_only_packages"] << "\n";
-        std::cout << "  - pkg only in sisyphus: " << summary["size_branch_2_only_packages"] << "\n";
-        std::cout << "  - pkg newer in p10: " << summary["size_packages_newer_in_branch_1"] << "\n";
-        std::cout << "  - all pkg in p10: " << summary["size_branch1_packages"] << "\n";
-        std::cout << "  - all pkg in sisyphus: " << summary["size_branch2_packages"] << "\n\n";
-        
-        std::cout << "--- differences ---\n";
-        auto& by_arch = comparison_result["comparison_by_architecture"]["x86_64"];
-        
-
-        if (by_arch["branch_1_only"].size() > 0) {
-            std::cout << "print pkg in p10:\n";
-            auto& example = by_arch["branch_1_only"][0];
-            std::cout << "  " << example["name"] << " " << example["version"] 
-                      << "-" << example["release"] << " (" << example["arch"] << ")\n";
+        altlinux::PackageComparator comp;
+        std::cout << "Loading packages for branch '" << branch << "'";
+        if (!arch.empty()) {
+            std::cout << " (arch: " << arch << ")";
         }
-        if (by_arch["branch_2_only"].size() > 0) {
-            std::cout << "print pkg only in sisyphus:\n";
-            auto& example = by_arch["branch_2_only"][0];
-            std::cout << "  " << example["name"] << " " << example["version"] 
-                      << "-" << example["release"] << " (" << example["arch"] << ")\n";
-        }
-        if (by_arch["branch_1_newer_versions"].size() > 0) {
-            std::cout << "Print pkg with different ver:\n";
-            auto& example = by_arch["branch_1_newer_versions"][0];
-            std::cout << "  " << example["name"] << " (" << example["arch"] << ")\n";
-            std::cout << "    p10: " << example["branch_1_version"] << "\n";
-            std::cout << "    sisyphus:  " << example["branch_2_version"] << "\n";
-        }
+        std::cout << "...\n";
         
+        auto packages = comp.load_branch_packages(branch, arch);
+        std::cout << "Total packages: " << packages["packages"].size() << "\n";
         
     } catch (const std::exception& e) {
-        std::cerr << "\n err: " << e.what() << std::endl;
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+}
+
+void compare_branches(const std::string& branch1, const std::string& branch2, const std::string& arch = "") {
+    try {
+        altlinux::PackageComparator comp;
+        std::filesystem::create_directories("data");
+
+        
+        std::cout << "Comparing " << branch1 << " vs " << branch2;
+        if (!arch.empty()) {
+            std::cout << " (arch: " << arch << ")";
+        }
+        std::cout << "\n";
+        
+        std::cout << "Loading packages...\n";
+        auto result = comp.compare_branches(branch1, branch2, arch);
+        
+        std::cout << "Comparison completed!\n\n";
+        
+
+        auto& summary = result["summary"];
+        
+        std::cout << "summary of comparison:\n";
+        std::cout << "  - pkg only in " << branch1 << ": " << summary["size_branch_1_only_packages"] << "\n";
+        std::cout << "  - pkg only in " << branch2 << ": " << summary["size_branch_2_only_packages"] << "\n";
+        std::cout << "  - pkg newer in " << branch1 << ": " << summary["size_packages_newer_in_branch_1"] << "\n";
+        std::cout << "  - all pkg in " << branch1 << ": " << summary["size_branch_1_packages"] << "\n";
+        std::cout << "  - all pkg in " << branch2 << ": " << summary["size_branch_2_packages"] << "\n\n";
+        
+
+        std::string filename = "data/comparison_" + branch1 + "_vs_" + branch2;
+        if (!arch.empty()) {
+            filename += "_" + arch;
+        }
+        filename += ".json";
+
+        json output;
+        output["metadata"] = result["metadata"];
+        output["summary"] = result["summary"];
+        
+        
+        json packages_only_branch1 = json::array();
+        json packages_only_branch2 = json::array();
+        json packages_newer_branch1 = json::array();
+        
+        auto& by_arch = result["comparison_by_architecture"];
+        for (const auto& [arch_name, arch_data] : by_arch.items()) {
+            
+            for (const auto& pkg : arch_data["branch_1_only"]) {
+                packages_only_branch1.push_back(pkg);
+            }
+            
+            
+            for (const auto& pkg : arch_data["branch_2_only"]) {
+                packages_only_branch2.push_back(pkg);
+            }
+            
+            
+            for (const auto& pkg : arch_data["branch_1_newer_versions"]) {
+                packages_newer_branch1.push_back(pkg);
+            }
+        }
+        
+        output["packages_only_in_" + branch1] = packages_only_branch1;
+        output["packages_only_in_" + branch2] = packages_only_branch2;
+        output["packages_newer_in_" + branch1] = packages_newer_branch1;
+        
+        std::ofstream out_file(filename);
+        if (out_file.is_open()) {
+            out_file << output.dump(4);
+            std::cout << "Full results saved to: " << filename << std::endl;
+            
+            std::cout << "Examples in file:\n";
+            if (output["packages_only_in_" + branch1].size() > 0) {
+                std::cout << "  - " << output["packages_only_in_" + branch1].size() 
+                          << " packages only in " << branch1 << "\n";
+            }
+            if (output["packages_only_in_" + branch2].size() > 0) {
+                std::cout << "  - " << output["packages_only_in_" + branch2].size() 
+                          << " packages only in " << branch2 << "\n";
+            }
+            if (output["packages_newer_in_" + branch1].size() > 0) {
+                std::cout << "  - " << output["packages_newer_in_" + branch1].size() 
+                          << " packages newer in " << branch1 << "\n";
+            }
+        } else {
+            std::cout << "Error saving file\n";
+        }
+        
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+}
+
+
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        print_usage();
+        return 1;
+    }
+    
+    std::string command = argv[1];
+    
+    if (command == "compare" && argc >= 4) {
+        std::string branch1 = argv[2];
+        std::string branch2 = argv[3];
+        std::string arch = (argc >= 5) ? argv[4] : "";
+        compare_branches(branch1, branch2, arch);
+    }
+    else if (command == "info" && argc >= 3) {
+        std::string branch = argv[2];
+        std::string arch = (argc >= 4) ? argv[3] : "";
+        print_package_info(branch, arch);
+    }
+    else if (command == "list-branches") {
+        print_branches();
+    }
+    else if (command == "help" || command == "--help" || command == "-h") {
+        print_usage();
+    }
+    else {
+        std::cerr << "Unknown command or invalid arguments\n\n";
+        print_usage();
         return 1;
     }
     
