@@ -63,74 +63,87 @@ CMAKE_BINARY_DIR = /home/alt-desktop/Git_projects/MyTaskJson/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/mytaskjson.dir/all
-all: _deps/nlohmann_json-build/all
+all: CMakeFiles/altlinux_comparison.dir/all
+all: CMakeFiles/altlinux-compare.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/mytaskjson.dir/codegen
-codegen: _deps/nlohmann_json-build/codegen
+codegen: CMakeFiles/altlinux_comparison.dir/codegen
+codegen: CMakeFiles/altlinux-compare.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: _deps/nlohmann_json-build/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/mytaskjson.dir/clean
-clean: _deps/nlohmann_json-build/clean
+clean: CMakeFiles/altlinux_comparison.dir/clean
+clean: CMakeFiles/altlinux-compare.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory _deps/nlohmann_json-build
-
-# Recursive "all" directory target.
-_deps/nlohmann_json-build/all:
-.PHONY : _deps/nlohmann_json-build/all
-
-# Recursive "codegen" directory target.
-_deps/nlohmann_json-build/codegen:
-.PHONY : _deps/nlohmann_json-build/codegen
-
-# Recursive "preinstall" directory target.
-_deps/nlohmann_json-build/preinstall:
-.PHONY : _deps/nlohmann_json-build/preinstall
-
-# Recursive "clean" directory target.
-_deps/nlohmann_json-build/clean:
-.PHONY : _deps/nlohmann_json-build/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/mytaskjson.dir
+# Target rules for target CMakeFiles/altlinux_comparison.dir
 
 # All Build rule for target.
-CMakeFiles/mytaskjson.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=1,2 "Built target mytaskjson"
-.PHONY : CMakeFiles/mytaskjson.dir/all
+CMakeFiles/altlinux_comparison.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=3,4 "Built target altlinux_comparison"
+.PHONY : CMakeFiles/altlinux_comparison.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mytaskjson.dir/rule: cmake_check_build_system
+CMakeFiles/altlinux_comparison.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mytaskjson.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/altlinux_comparison.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles 0
-.PHONY : CMakeFiles/mytaskjson.dir/rule
+.PHONY : CMakeFiles/altlinux_comparison.dir/rule
 
 # Convenience name for target.
-mytaskjson: CMakeFiles/mytaskjson.dir/rule
-.PHONY : mytaskjson
+altlinux_comparison: CMakeFiles/altlinux_comparison.dir/rule
+.PHONY : altlinux_comparison
 
 # codegen rule for target.
-CMakeFiles/mytaskjson.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=1,2 "Finished codegen for target mytaskjson"
-.PHONY : CMakeFiles/mytaskjson.dir/codegen
+CMakeFiles/altlinux_comparison.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=3,4 "Finished codegen for target altlinux_comparison"
+.PHONY : CMakeFiles/altlinux_comparison.dir/codegen
 
 # clean rule for target.
-CMakeFiles/mytaskjson.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/clean
-.PHONY : CMakeFiles/mytaskjson.dir/clean
+CMakeFiles/altlinux_comparison.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/clean
+.PHONY : CMakeFiles/altlinux_comparison.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/altlinux-compare.dir
+
+# All Build rule for target.
+CMakeFiles/altlinux-compare.dir/all: CMakeFiles/altlinux_comparison.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=1,2 "Built target altlinux-compare"
+.PHONY : CMakeFiles/altlinux-compare.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/altlinux-compare.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/altlinux-compare.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles 0
+.PHONY : CMakeFiles/altlinux-compare.dir/rule
+
+# Convenience name for target.
+altlinux-compare: CMakeFiles/altlinux-compare.dir/rule
+.PHONY : altlinux-compare
+
+# codegen rule for target.
+CMakeFiles/altlinux-compare.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=1,2 "Finished codegen for target altlinux-compare"
+.PHONY : CMakeFiles/altlinux-compare.dir/codegen
+
+# clean rule for target.
+CMakeFiles/altlinux-compare.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/clean
+.PHONY : CMakeFiles/altlinux-compare.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

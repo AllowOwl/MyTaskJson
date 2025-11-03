@@ -1,0 +1,2 @@
+/usr/bin/ar qc libaltlinux_comparison.a CMakeFiles/altlinux_comparison.dir/libaltlinux_comparison.cpp.o
+/usr/bin/ranlib libaltlinux_comparison.a

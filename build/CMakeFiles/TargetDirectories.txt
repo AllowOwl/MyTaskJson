@@ -1,5 +1,4 @@
-/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/mytaskjson.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/altlinux_comparison.dir
+/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/altlinux-compare.dir
 /home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/edit_cache.dir
 /home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles/rebuild_cache.dir
-/home/alt-desktop/Git_projects/MyTaskJson/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
-/home/alt-desktop/Git_projects/MyTaskJson/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir

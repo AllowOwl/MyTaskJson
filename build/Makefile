@@ -117,41 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mytaskjson
+# Target rules for targets named altlinux_comparison
 
 # Build rule for target.
-mytaskjson: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mytaskjson
-.PHONY : mytaskjson
+altlinux_comparison: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 altlinux_comparison
+.PHONY : altlinux_comparison
 
 # fast build rule for target.
-mytaskjson/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/build
-.PHONY : mytaskjson/fast
+altlinux_comparison/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/build
+.PHONY : altlinux_comparison/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named altlinux-compare
+
+# Build rule for target.
+altlinux-compare: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 altlinux-compare
+.PHONY : altlinux-compare
+
+# fast build rule for target.
+altlinux-compare/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/build
+.PHONY : altlinux-compare/fast
+
+altlinux_compare.o: altlinux_compare.cpp.o
+.PHONY : altlinux_compare.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/main.cpp.o
-.PHONY : main.cpp.o
+altlinux_compare.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o
+.PHONY : altlinux_compare.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+altlinux_compare.i: altlinux_compare.cpp.i
+.PHONY : altlinux_compare.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/main.cpp.i
-.PHONY : main.cpp.i
+altlinux_compare.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.i
+.PHONY : altlinux_compare.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+altlinux_compare.s: altlinux_compare.cpp.s
+.PHONY : altlinux_compare.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytaskjson.dir/build.make CMakeFiles/mytaskjson.dir/main.cpp.s
-.PHONY : main.cpp.s
+altlinux_compare.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux-compare.dir/build.make CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.s
+.PHONY : altlinux_compare.cpp.s
+
+libaltlinux_comparison.o: libaltlinux_comparison.cpp.o
+.PHONY : libaltlinux_comparison.o
+
+# target to build an object file
+libaltlinux_comparison.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/libaltlinux_comparison.cpp.o
+.PHONY : libaltlinux_comparison.cpp.o
+
+libaltlinux_comparison.i: libaltlinux_comparison.cpp.i
+.PHONY : libaltlinux_comparison.i
+
+# target to preprocess a source file
+libaltlinux_comparison.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/libaltlinux_comparison.cpp.i
+.PHONY : libaltlinux_comparison.cpp.i
+
+libaltlinux_comparison.s: libaltlinux_comparison.cpp.s
+.PHONY : libaltlinux_comparison.s
+
+# target to generate assembly for a file
+libaltlinux_comparison.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/altlinux_comparison.dir/build.make CMakeFiles/altlinux_comparison.dir/libaltlinux_comparison.cpp.s
+.PHONY : libaltlinux_comparison.cpp.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mytaskjson"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... altlinux-compare"
+	@echo "... altlinux_comparison"
+	@echo "... altlinux_compare.o"
+	@echo "... altlinux_compare.i"
+	@echo "... altlinux_compare.s"
+	@echo "... libaltlinux_comparison.o"
+	@echo "... libaltlinux_comparison.i"
+	@echo "... libaltlinux_comparison.s"
 .PHONY : help
 
 

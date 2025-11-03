@@ -11,10 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.7/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.7/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.7/CMakeSystem.cmake"
-  "_deps/nlohmann_json-src/CMakeLists.txt"
-  "_deps/nlohmann_json-src/cmake/config.cmake.in"
-  "_deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in"
-  "_deps/nlohmann_json-src/cmake/pkg-config.pc.in"
   "/usr/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
@@ -34,7 +30,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake/Modules/CMakeLanguageInformation.cmake"
-  "/usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake"
   "/usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake"
   "/usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake"
@@ -103,14 +98,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-  "/usr/share/cmake/Modules/ExternalProject.cmake"
-  "/usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake"
-  "/usr/share/cmake/Modules/FetchContent.cmake"
-  "/usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in"
-  "/usr/share/cmake/Modules/FindGit.cmake"
   "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake/Modules/FindPackageMessage.cmake"
-  "/usr/share/cmake/Modules/GNUInstallDirs.cmake"
+  "/usr/share/cmake/Modules/FindPkgConfig.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -132,7 +122,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake/Modules/Platform/Linux.cmake"
   "/usr/share/cmake/Modules/Platform/UnixPaths.cmake"
-  "/usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -150,15 +139,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.31.7/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.7/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.7/CMakeCXXCompiler.cmake"
-  "_deps/nlohmann_json-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "_deps/nlohmann_json-build/nlohmann_json.pc"
-  "_deps/nlohmann_json-build/nlohmann_jsonConfigVersion.cmake"
-  "_deps/nlohmann_json-build/nlohmann_jsonConfig.cmake"
-  "_deps/nlohmann_json-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/mytaskjson.dir/DependInfo.cmake"
+  "CMakeFiles/altlinux_comparison.dir/DependInfo.cmake"
+  "CMakeFiles/altlinux-compare.dir/DependInfo.cmake"
   )

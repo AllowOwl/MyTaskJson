@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/altlinux-compare.dir/link.d "CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o" -o altlinux-compare  libaltlinux_comparison.a -lcurl

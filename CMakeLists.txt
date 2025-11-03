@@ -1,20 +1,29 @@
-cmake_minimum_required(VERSION 3.10.0)
-project(mytaskjson VERSION 0.1.0 LANGUAGES C CXX)
+cmake_minimum_required(VERSION 3.10)
+project(AltLinuxComparator VERSION 1.0.0)
 
+# Настройка компилятора C++
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(FetchContent)
+# Поиск зависимостей
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(CURL REQUIRED libcurl)
 
-# Загрузка nlohmann/json
-FetchContent_Declare(
-    nlohmann_json
-    GIT_REPOSITORY https://github.com/nlohmann/json.git
-    GIT_TAG v3.11.2
+# Основная библиотека
+add_library(altlinux_comparison STATIC
+    libaltlinux_comparison.cpp
 )
 
-FetchContent_MakeAvailable(nlohmann_json)
+# Главная CLI утилита (используем существующий файл)
+add_executable(altlinux-compare
+    altlinux_compare.cpp
+)
 
-# Создание исполняемого файла (ОДИН РАЗ!)
-add_executable(mytaskjson main.cpp)
-target_link_libraries(mytaskjson PRIVATE nlohmann_json::nlohmann_json)
+# Связывание библиотек
+target_link_libraries(altlinux-compare
+    altlinux_comparison
+    ${CURL_LIBRARIES}
+)
+
+# Флаги компилятора
+target_compile_options(altlinux-compare PRIVATE -Wall -Wextra)
