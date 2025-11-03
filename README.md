@@ -48,6 +48,12 @@ make
 docker pull allowowl/altlinux-comparator
 docker run -it allowowl/altlinux-comparator
 ```
+### Podman
+```bash
+sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $USER
+sudo podman build -t altlinux-comparator .
+sudo podman run -it altlinux-comparator
+```
 
 ## Usage
 
