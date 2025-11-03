@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/altlinux-compare.dir/link.d "CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o" -o altlinux-compare  libaltlinux_comparison.a -lcurl
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/altlinux-compare.dir/link.d "CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o" -o altlinux-compare  -Wl,-rpath,/home/alt-desktop/Git_projects/MyTaskJson/build libaltlinux_comparison.so.1.0.0 -lcurl

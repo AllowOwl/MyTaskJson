@@ -1,2 +1,1 @@
-/usr/bin/ar qc libaltlinux_comparison.a CMakeFiles/altlinux_comparison.dir/libaltlinux_comparison.cpp.o
-/usr/bin/ranlib libaltlinux_comparison.a
+/usr/bin/c++ -fPIC -Wl,--dependency-file=CMakeFiles/altlinux_comparison.dir/link.d -shared -Wl,-soname,libaltlinux_comparison.so.1 -o libaltlinux_comparison.so.1.0.0 CMakeFiles/altlinux_comparison.dir/libaltlinux_comparison.cpp.o

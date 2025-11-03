@@ -96,7 +96,7 @@ altlinux__compare_EXTERNAL_OBJECTS =
 altlinux-compare: CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o
 altlinux-compare: CMakeFiles/altlinux-compare.dir/build.make
 altlinux-compare: CMakeFiles/altlinux-compare.dir/compiler_depend.ts
-altlinux-compare: libaltlinux_comparison.a
+altlinux-compare: libaltlinux_comparison.so.1.0.0
 altlinux-compare: CMakeFiles/altlinux-compare.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alt-desktop/Git_projects/MyTaskJson/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable altlinux-compare"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/altlinux-compare.dir/link.txt --verbose=$(VERBOSE)

@@ -3,7 +3,7 @@ altlinux-compare: \
   /usr/lib64/gcc/x86_64-alt-linux/13/../../../../lib64/crti.o \
   /usr/lib64/gcc/x86_64-alt-linux/13/crtbeginS.o \
   CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o \
-  libaltlinux_comparison.a \
+  libaltlinux_comparison.so.1.0.0 \
   /usr/lib64/gcc/x86_64-alt-linux/13/../../../../lib64/libcurl.so \
   /usr/lib64/gcc/x86_64-alt-linux/13/libstdc++.so \
   /usr/lib64/gcc/x86_64-alt-linux/13/../../../../lib64/libm.so \
@@ -81,7 +81,7 @@ altlinux-compare: \
 
 CMakeFiles/altlinux-compare.dir/altlinux_compare.cpp.o:
 
-libaltlinux_comparison.a:
+libaltlinux_comparison.so.1.0.0:
 
 /usr/lib64/gcc/x86_64-alt-linux/13/../../../../lib64/libcurl.so:
 
